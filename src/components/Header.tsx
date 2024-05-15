@@ -2,7 +2,7 @@ import React from "react";
 import { IoMoonOutline } from "react-icons/io5";
 const Header = () => {
   return (
-    <div className="flex justify-between bg-white h-20 m-0.5 rounded-sm">
+    <div className="flex justify-between h-16">
       <div className="font-bold text-xl content-center pl-10">
         where in the world?
       </div>
