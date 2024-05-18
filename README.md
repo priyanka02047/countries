@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Hosting URL
+https://country-web-app.web.app
+
 ## Screenshots : Dark mode on
 ![alt text](image.png)
 
@@ -82,6 +85,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
+
+## how to host web APP Refer this
+https://www.youtube.com/watch?v=trrbkxtnOg8
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
