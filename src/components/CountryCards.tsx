@@ -1,8 +1,6 @@
 import {
-  Button,
   Card,
   CardBody,
-  CardFooter,
   Heading,
   Stack,
   Text,
@@ -20,6 +18,7 @@ const Country = (props: countryProps) => {
   return (
     country !== undefined && (
       <Card
+        className="bg-white text-black dark:bg-gray-800 dark:text-white dark:border-transparent"
         margin={5}
         direction={{ base: "column", sm: "column" }}
         overflow="hidden"
@@ -38,12 +37,18 @@ const Country = (props: countryProps) => {
         <Stack>
           <CardBody>
             <Heading size="md">{country?.name.official}</Heading>
-
-            <Text py="2">Population: {country.population}</Text>
-            <Text py="2">Region: {country.region}</Text>
-            <Text py="2">
-              Capital: {country?.capital ? country?.capital.join(",") : ""}
-            </Text>
+            <div className="flex pt-4">
+              <Text fontWeight={"bold"}>{"Population: "}&nbsp;</Text>
+              <Text>{country.population}</Text>
+            </div>
+            <div className="flex">
+              <Text fontWeight={"bold"}>{"Region: "}&nbsp;</Text>
+              <Text>{country.region}</Text>
+            </div>
+            <div className="flex">
+              <Text fontWeight={"bold"}>{"Capital: "}&nbsp;</Text>
+              <Text> {country?.capital ? country?.capital.join(",") : ""}</Text>
+            </div>
           </CardBody>
         </Stack>
       </Card>
