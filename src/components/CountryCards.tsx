@@ -14,7 +14,6 @@ interface countryProps {
 }
 const Country = (props: countryProps) => {
   const country = props.country;
-  //const capital = country?.capital.join(",");
   return (
     country !== undefined && (
       <Card
