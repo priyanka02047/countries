@@ -46,35 +46,40 @@ const Body = (): JSX.Element => {
 
   return (
     <div className="pt-2 bg-white text-black dark:bg-gray-900 dark:text-white">
-      <div className="flex p-4">
-        <InputGroup>
+      <div className="flex flex-col sm:flex-row p-4 space-y-4 sm:space-y-0 sm:space-x-4 sm:p-10">
+        <InputGroup className="border-none">
           <InputLeftElement pointerEvents="none">
             <HiMiniMagnifyingGlass color="gray.300" />
           </InputLeftElement>
           <Input
-            className="bg-white text-black dark:bg-gray-800 dark:text-white dark:border-transparent"
+            className="bg-white shadow-md text-black dark:bg-gray-800 dark:text-white min-w-full sm:min-w-60 max-w-full sm:max-w-60"
             type="text"
+            border="none"
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
             placeholder="Search for a country..."
-            width={"auto"}
           />
         </InputGroup>
         <Menu>
           <MenuButton
             as={Button}
             rightIcon={<IoChevronDown />}
+            maxWidth={"200px"}
             minWidth={"200px"}
             transition="all 0.2s"
             _expanded={{ bg: "gray.100" }}
             borderRadius="md"
-            borderWidth="1px"
-            className="bg-white text-black dark:bg-gray-800 dark:text-white dark:hover:bg-gray-800 dark:aria-expanded:bg-gray-800 dark:border-transparent"
+            borderWidth="0px"
+            className="bg-white shadow-md text-black dark:bg-gray-800 dark:text-white dark:hover:bg-gray-800 dark:aria-expanded:bg-gray-800 dark:border-transparent"
           >
             Filter By Region
           </MenuButton>
-          <MenuList className="bg-white text-black dark:bg-gray-800 dark:text-white dark:border-transparent">
+          <MenuList
+            boxShadow="lg"
+            borderStyle={"none"}
+            className="bg-white text-black dark:bg-gray-800 dark:text-white dark:border-transparent"
+          >
             <MenuItem
               onClick={() => {
                 setRegion("");

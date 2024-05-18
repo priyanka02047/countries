@@ -18,11 +18,13 @@ const Country = (props: countryProps) => {
   return (
     country !== undefined && (
       <Card
-        className="bg-white text-black dark:bg-gray-800 dark:text-white dark:border-transparent"
+        className="bg-white shadow-lg text-black dark:bg-gray-800 dark:text-white dark:border-transparent"
         margin={5}
         direction={{ base: "column", sm: "column" }}
         overflow="hidden"
         variant="outline"
+        boxShadow="lg"
+        borderStyle={"none"}
         width={250}
       >
         <Image
