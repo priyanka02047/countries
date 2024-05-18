@@ -55,7 +55,7 @@ const CountryDetail = (): JSX.Element => {
 
   return (
     country && (
-      <div className="text-black bg-white dark:text-white dark:bg-gray-900 min-h-screen ">
+      <div className="text-black bg-white dark:text-white dark:bg-gray-900 min-h-screen">
         <Link to="/" className="p-4 sm:p-10">
           <button className="flex dark:bg-gray-800 rounded-md min-w-24 max-w-24 p-2 m-10">
             {" "}

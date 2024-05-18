@@ -105,7 +105,7 @@ const Body = (): JSX.Element => {
         </Menu>
       </div>
       {filteredData.length > 0 ? (
-        <div className="pl-12 flex flex-wrap">
+        <div className="pl-2 flex flex-wrap sm:pl-12">
           {filteredData.map((item: any) => {
             return (
               <Link to={`/country/${item?.name.official}`} key={item.id}>
