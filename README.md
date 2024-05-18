@@ -2,25 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Screenshots : Dark mode on
+## Screenshots : Dark mode on
 ![alt text](image.png)
 
 ![alt text](image-1.png)
 
-Screenshots : Dark mode off
+## Screenshots : Dark mode off
 ![alt text](image-3.png)
 
 ![alt text](image-2.png)
 
-Screenshot : onclick of any country dark mode on
+## Screenshot : onclick of any country dark mode on
 ![alt text](image-4.png)
 
 ![alt text](image-7.png)
 
-Screenshot : onclick of any country dark mode off
+## Screenshot : onclick of any country dark mode off
 ![alt text](image-5.png)
 
 ![alt text](image-6.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
