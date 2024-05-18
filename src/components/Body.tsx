@@ -12,6 +12,7 @@ import React, { useEffect, useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
 import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 import CountryCards from "./CountryCards";
+import { Link } from "react-router-dom";
 const Body = (): JSX.Element => {
   const [allCountries, setAllCountries] = useState([]);
   const [allRegions, setAllRegions] = useState<string[]>([]);
@@ -105,8 +106,12 @@ const Body = (): JSX.Element => {
       </div>
       {filteredData.length > 0 ? (
         <div className="pl-12 flex flex-wrap">
-          {filteredData.map((item) => {
-            return <CountryCards country={item} />;
+          {filteredData.map((item: any) => {
+            return (
+              <Link to={`/country/${item?.name.official}`} key={item.id}>
+                <CountryCards country={item} />
+              </Link>
+            );
           })}
         </div>
       ) : (

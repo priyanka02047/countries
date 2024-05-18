@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import Body from "./components/Body";
+import { Outlet } from "react-router-dom";
 import React from "react";
 import { ChakraProvider, Divider } from "@chakra-ui/react";
 
@@ -10,10 +10,9 @@ function App() {
       <ChakraProvider>
         <Header />
         <Divider />
-        <Body />
+        <Outlet />
       </ChakraProvider>
     </div>
   );
 }
-
 export default App;

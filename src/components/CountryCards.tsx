@@ -23,6 +23,8 @@ const Country = (props: countryProps) => {
         direction={{ base: "column", sm: "column" }}
         overflow="hidden"
         variant="outline"
+        maxH={350}
+        minH={350}
         boxShadow="lg"
         borderStyle={"none"}
         width={250}
