@@ -115,7 +115,9 @@ const Body = (): JSX.Element => {
           })}
         </div>
       ) : (
-        <div className="pl-12 pt-40 text-center">No Data Found</div>
+        <div className="pl-12 pt-40 text-center min-h-screen">
+          No Data Found
+        </div>
       )}
     </div>
   );
